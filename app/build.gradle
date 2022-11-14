@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.vk.api:sdk:1.0.14'
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.11.2'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+}
+
+application {
+    mainClass = 'ru.svyat.bg.hndlr.App'
+}
